@@ -426,3 +426,5 @@ The left direction of the entity
 #### `object.up` 
 The up direction of the entity
 
+#### `object.velocity` 
+The velocity of the entity
