@@ -1,5 +1,5 @@
 # POTENTIAL API REWRITE
-This is a document that aims to explain and provide a potential api structure that could be used for the rewrite. This is going to contain the current API request along with an updated API request and an explination and resasioning behind it
+This is a document that aims to explain and provide a potential api structure that could be used for the rewrite. This is going to contain the current API request along with an updated API request and an explination and reasoning behind it
 
 
 ## Current Combat API
@@ -188,7 +188,7 @@ My general idea for the new api is to provide enough information in the api to b
                     "overheated" : false,
                     "heat" : 0
                 },
-                "ordinace":{
+                "ordinance":{
                     "name" : "detinator",
                     "active" : false,
                     "recharge" : 0
@@ -279,6 +279,7 @@ The points that the blue team has in the current round. this is in terms of the 
 ---
 #### `distance`
 The distance the payload is from the start
+
 #### `checkpoint`
 What checkpoint the payload is at
 Possible values:
@@ -290,7 +291,7 @@ Possible values:
 The travel speed of the payload
 
 #### `contested`
-Weather the point is being activly contested by the defending team. this only happend if both team are activly on the payload
+Whether the point is being activly contested by the defending team. this only happend if both team are activly on the payload
 
 #### `cooldown`
 If the payload is in cooldown from gaining a checkpoint.
@@ -308,7 +309,7 @@ The left direction of the payload
 The up direction of the payload
 
 #### `velocity`
-the velocity of the payload in terms of x,y,z
+The velocity of the payload in terms of x,y,z
 ### Player information
 ---
 
@@ -322,58 +323,58 @@ If the player is stunned by an arc-mine or a stunfield
 The health value of the player
 
 #### `stats`
-a list of player stats
+A list of player stats
 
 #### `invulnerable`
-if the player is phased and invulnerable to damage
+If the player is phased and invulnerable to damage
 
 #### `stats.eliminations`
-the number of eliminations a player has
+The number of eliminations a player has
 
 #### `stats.objective_time`
-the objective time the player has
+The objective time the player has
 
 #### `stats.objective_eliminations`
-the number of eliminations a player has while on objective
+The number of eliminations a player has while on objective
 
 #### `stats.objective_damage`
-the objective damage the player has
+The objective damage the player has
 
 #### `stats.deaths`
-the number of deaths the player has
+The number of deaths the player has
 
 #### `stats.damage`
-the total amount of damage the player has
+The total amount of damage the player has
 
 #### `stats.headshot_elimintions`
-the number of headshot eliminations
+The number of headshot eliminations
 
 #### `stats.assists`
-the number of assists
+The number of assists
 
 #### `stats.stuns`
-the number of stuns a player has
+The number of stuns a player has
 
 #### `loadout`
-the loadout a player has
+The loadout a player has
 
 #### `loadout.weapon`
-the weapon the player has
+The weapon the player has
 
 #### `loadout.weapon.name`
-the name of the weapon
+The name of the weapon
 
 #### `loadout.weapon.overheat`
-if the weapon is overheated
+If the weapon is overheated
 
 #### `loadout.weapon.heat`
-the current "heat" value of the weapon
+The current "heat" value of the weapon
 
 #### `loadout.ordinance`
-the ordinance the player has
+The ordinance the player has
 
 #### `loadout.ordinance.name`
-the name of the ordinance
+The name of the ordinance
 
 #### `loadout.ordinance.active`
 If the ordinance is currently active and in the map. Ex. in a players hand, planted down, or thrown
@@ -396,10 +397,10 @@ The techmod cooldown
 ### Entitys
 ---
 #### `entitys`
-a list of entitys in the map
+A list of entitys in the map
 
 #### `name`
-the name of tne entity
+The name of tne entity
 Possible values:
 - `comet_shot`
 - `pulsar_shot`
@@ -412,7 +413,7 @@ Possible values:
 - `shield`
 
 #### `owner`
-the playerID of the owner/sender of this entity
+The playerID of the owner/sender of this entity
 
 #### `object.position` 
 The position of the entity
